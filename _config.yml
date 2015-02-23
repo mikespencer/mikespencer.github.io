@@ -9,3 +9,6 @@ github_username:  mikespencer
 
 # Build settings
 markdown: kramdown
+
+sass:
+    sass_dir: .

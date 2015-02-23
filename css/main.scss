@@ -51,4 +51,5 @@ $on-laptop:        800px;
 //        "syntax-highlighting"
 //;
 
-@import "custom"
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "_sass/custom";
