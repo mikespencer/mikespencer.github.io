@@ -1,0 +1,9 @@
+.btn-ghost {
+  background: transparent;
+  &.btn-primary { color: $brand-primary }
+  &.btn-info    { color: $brand-info }
+  &.btn-success { color: $brand-success }
+  &.btn-warning { color: $brand-warning }
+  &.btn-danger  { color: $brand-danger }
+  &:hover       { color: $body-bg }
+}

@@ -1,0 +1,25 @@
+.stripe {
+  padding: $jumbotron-padding 0;
+  margin-bottom: $jumbotron-padding;
+  color: $body-bg;
+  background-color: $brand-primary;
+
+  h1,
+  .h1 {
+    color: $jumbotron-heading-color;
+  }
+
+  p {
+    margin-bottom: ($jumbotron-padding / 2);
+    font-size: $jumbotron-font-size;
+    font-weight: 200;
+  }
+
+  @media screen and (min-width: $screen-sm-min) {
+    padding: ($jumbotron-padding * 1.6) 0;
+    h1,
+    .h1 {
+      font-size: ($font-size-base * 4.5);
+    }
+  }
+}
