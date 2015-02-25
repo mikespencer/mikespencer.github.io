@@ -12,3 +12,4 @@ markdown: kramdown
 
 sass:
     sass_dir: .
+    style: :compressed

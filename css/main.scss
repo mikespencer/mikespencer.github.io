@@ -43,13 +43,6 @@ $on-laptop:        800px;
 }
 
 
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-//@import
-//        "base",
-//        "layout",
-//        "syntax-highlighting"
-//;
-
+@import "_sass/overrides";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
-@import "_sass/custom";
+@import "_sass/main";
