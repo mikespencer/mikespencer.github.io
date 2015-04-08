@@ -54,13 +54,12 @@
   }
 
   function init(){
-    var params = getParams();
+    var params = getParams(),
+      text = params.text || "Append '?text=[your text here]' to the URL to display text.";
 
-    if(params.text){
-      document.title = params.text;
-      addText(params.text);
-      delete params.text;
-    }
+    document.title = text;
+    addText(text);
+    delete params.text;
 
     if(params.img){
       addImg(params.img);
