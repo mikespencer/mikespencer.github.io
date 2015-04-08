@@ -1,0 +1,22 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	margin: 0;
+	font-size: 30px;
+	background-color: #E0393E;
+	padding: 40px;
+	color: white;
+	text-align: center;
+	font-family: helvetica, arial, sans-serif;
+}
+
+img {
+  margin: 0 auto 40px;
+}
+
+p {
+  margin-bottom: 40px;
+}
