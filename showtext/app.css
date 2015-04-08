@@ -5,13 +5,14 @@ html {
 
 body {
 	margin: 0;
-	font-size: 32px;
+	font-size: 48px;
 	background-color: #2eb135;
   line-height: 1.1;
 	padding: 40px;
 	color: white;
 	text-align: center;
 	font-family: helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 img {
