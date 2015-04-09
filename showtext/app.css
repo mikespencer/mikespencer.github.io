@@ -23,8 +23,17 @@ p, img {
 img {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0);
-  -webkit-animation: wiggle 0.2s linear 2s 3 normal both running;
-  animation: wiggle 0.2s linear 2s 3 normal both running;
+
+  -webkit-animation-name: wiggle;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 3;
+  -webkit-animation-timing-function: linear;
+  animation-name: wiggle;
+  animation-duration: 0.2s;
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes wiggle {
