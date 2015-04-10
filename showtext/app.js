@@ -53,28 +53,12 @@
     body.appendChild(img);
   }
 
-  function setupInstructions(){
-    document.querySelector(".instructions").style.display = "block";
-
-    document.querySelector("form").addEventListener("submit", function(){
-      var inputs = document.querySelectorAll("input[type='text']"), v;
-
-      [].forEach.call(inputs, function(input) {
-        v = input.value;
-        input.value = v.replace(/\s/g, "+");
-      });
-
-    }, false);
-
-    return;
-  }
-
   function init(){
     var params = getParams(),
       text = params.text;
 
     if(!text){
-      setupInstructions();
+      document.querySelector(".instructions").style.display = "block";
       return;
     }
 
