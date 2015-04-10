@@ -4,11 +4,18 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Add text and images to display</title>
   <link rel="stylesheet" href="app.css" />
 </head>
 <body>
-	<div class="container"></div>
+  <div class="instructions">
+    <p class="small">Enter some info...</p>
+    <form method="GET">
+      <input type="text" name="text" id="text" val="" placeholder="Add a title..." />
+      <input type="text" name="img" id="img" val="" placeholder="Add an image url..." />
+      <input type="submit" value="Go!" />
+    </form>
+  </div>
 	<script src="app.js"></script>
 </body>
 </html>

@@ -20,18 +20,51 @@ p, img {
   width: 100%;
 }
 
+.small {
+  font-size: 16px;
+}
+
+
+/** INSTRUCTIONS **/
+
+.instructions {
+  display: none;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border: 2px solid #333;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 50%;
+  background-color: #369;
+  color: white;
+}
+
+
+/** ANIMATION **/
+
 img {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0);
 
   -webkit-animation-name: wiggle;
   -webkit-animation-duration: 0.2s;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: 1.25s;
   -webkit-animation-iteration-count: 3;
   -webkit-animation-timing-function: linear;
+
   animation-name: wiggle;
   animation-duration: 0.2s;
-  animation-delay: 2s;
+  animation-delay: 1.25s;
   animation-iteration-count: 3;
   animation-timing-function: linear;
 }

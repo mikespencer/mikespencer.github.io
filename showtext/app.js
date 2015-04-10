@@ -4,7 +4,7 @@
   var body = document.body;
 
   function getParams(){
-    var params = decodeURI(window.location.search)
+    var params = decodeURIComponent(window.location.search)
       .replace(/^\?/, "") // remove leading ?
       .replace(/\/$/, "") // remove trailing /
       .replace(/\+/g, " ") // replace +'s with spaces
@@ -53,9 +53,30 @@
     body.appendChild(img);
   }
 
+  function setupInstructions(){
+    document.querySelector(".instructions").style.display = "block";
+
+    document.querySelector("form").addEventListener("submit", function(){
+      var inputs = document.querySelectorAll("input[type='text']"), v;
+
+      [].forEach.call(inputs, function(input) {
+        v = input.value;
+        input.value = v.replace(/\s/g, "+");
+      });
+
+    }, false);
+
+    return;
+  }
+
   function init(){
     var params = getParams(),
-      text = params.text || "Append '?text=[your text here]' to the URL to display text.";
+      text = params.text;
+
+    if(!text){
+      setupInstructions();
+      return;
+    }
 
     document.title = text;
     addText(text);
