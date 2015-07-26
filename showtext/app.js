@@ -47,9 +47,12 @@
     body.appendChild(p);
   }
 
-  function addImg(src){
+  function addImg(src, animate){
     var img = document.createElement("img");
     img.src = src;
+    if(animate){
+      img.className = "animate";
+    }
     body.appendChild(img);
   }
 
@@ -67,7 +70,7 @@
     delete params.text;
 
     if(params.img){
-      addImg(params.img);
+      addImg(params.img, params.animate !== "false");
       delete params.img;
     }
 

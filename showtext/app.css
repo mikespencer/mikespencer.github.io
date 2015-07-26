@@ -53,7 +53,7 @@ input[type="submit"] {
 
 /** ANIMATION **/
 
-img {
+img.animate {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0);
 
